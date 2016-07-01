@@ -1,0 +1,197 @@
+/*
+ * @project: 
+ * @description: 
+ * @author: Diego Sanches
+ * @version: 1.0.0
+ */
+
+/* ===================
+   === BASE STYLES ===
+   =================== */
+* {
+    text-decoration: none;
+    
+    list-style: none;
+    border: none;
+    border-radius: 0 !important;
+
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+body {
+    overflow: hidden;
+}
+::-moz-selection {
+    background: #000;
+    color: #FFF;
+    text-shadow: none;
+}
+::selection {
+    background: #000;
+    color: #FFF;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+select,
+textarea {
+    
+    outline: none;
+    resize: none;
+
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+
+}
+input {}
+select {}
+textarea {}
+
+/* ======================
+   === BROWSER UPDATE ===
+   ====================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+
+
+/* ===============================
+   === STYLE CUSTOM BY PROJECT ===
+   =============================== */
+    
+    #loading {
+        background: url(../img/loader-circle-black.gif) no-repeat center fixed #FFF;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: -110%;
+        left: 0;
+        z-index: 999;
+        overflow: hidden;
+        cursor: wait;
+    }
+    .loading #loading {
+        top: 0;
+    }
+
+
+    #header {}
+    #main {
+        
+    }
+    #footer {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================
+   === HELPER CLASSES ===
+   ====================== */
+.wrap {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    position: relative;
+}
+.transitions {
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+}
+
+
+
+
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
